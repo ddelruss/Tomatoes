@@ -1,0 +1,35 @@
+The requirements state we need to be able to read and write using a REST API.
+Quick reminder: REST stands for Representation State Transfer, and is stateless.
+
+From CRUD we'll assume:
+
+In scope:
+Create
+Read
+
+Out of scope:
+Update
+Delete
+
+Obviously we'll want to design an API that will handle the Update and Delete functions as
+an extension of the initial API.
+
+Read (GET)
+/movies 				-> Return all movies
+/movies?name={TEXT} 	-> return movies starting with TEXT. This implicitly supports search
+							(at least "starts with" style).
+
+Create (POST)
+/movie					-> Create a movie. For now we'll assume you can't re-create an existing movie,
+							triggering an error.
+
+Update (POST) [OUT OF SCOPE]
+/movie?update=YES		-> Parameter allows override of protections and supports "UPSERT" style create/update.
+
+Delete (POST) [OUT OF SCOPE]
+/movie?name={TEXT}		-> Delete movie with exact match of TEXT. Note this *could* be a GET, but that is poor
+							design as it triggers a destructive operation from an operations that is reasonably
+							expected to be read-only.
+
+Note that we can reasonably expect the POST operations to include authentication credentials, in which case they
+need to be secure. GET operations expose the request body and are therefore implicitly insecure (even with https).

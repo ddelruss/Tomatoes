@@ -1,0 +1,30 @@
+This file is an auxiliary commentary on the FreshTomatoes development project.
+The -> marks indicate at what point I created a file in the project.
+-> Commentary.txt
+
+I begin by re-reading the requirements. Next, create a project structure that 
+reflects the requirements: Client, Server, and Docs.
+-> Requirements.txt
+-> readme.txt
+
+Next I want a high level architecture, in this case choosing the technologies.
+This light-weight architecture step is a good time to validate assumptions about 
+which technologies are current, play nice together, and suit the development team.
+-> Architecture.txt
+
+Next I want to get up and running with Node.js as my server software. I'll use a popular
+tutorial to get started: http://www.tutorialspoint.com/nodejs/index.htm
+
+I haven't used it on this machine before so I download and verify the installation. Since
+my customer will need to do this, too, I begin documenting specific instructions.
+-> Instructions.txt
+
+For an API example I use a different tutorial:
+https://www.thepolyglotdeveloper.com/2015/10/create-a-simple-restful-api-with-node-js/
+-> files within Server folder
+
+When I get to the routing phase I take a few minutes to design the RESTful API
+-> API Design.txt
+
+With the design sketched out I create the initial routes and get a feel for any issues.
+

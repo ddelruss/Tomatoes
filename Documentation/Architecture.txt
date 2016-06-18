@@ -1,0 +1,50 @@
+Server
+
+For simplicity this project shares documentation (this folder) and source control
+(github, single project). In a real project the server and client(s) would almost
+always be separate projects with potentially variant repositories and structure.
+
+Source/Version Control 
+-> git (local), github
+
+___________
+
+Server:
+
+Technology
+-> Node.js
+
+Testing Framework(s)
+-> 
+
+Deployment:
+-> Local (given scope of project assignment)
+
+__________
+
+Client:
+
+Technology
+-> iOS (Swift)
+
+Testing Framework(s)
+-> xUnit
+
+Deployment:
+-> Simulator (using localhost)
+-> Personal device to show offline behavior (optional)
+
+_________
+
+Research:
+Review current REST best practices: https://github.com/marmelab/awesome-rest
+
+For an industrial-strength approach I'd look more into Amazon services such as
+API Gateway (https://aws.amazon.com/api-gateway/) and Lambda (https://aws.amazon.com/lambda/).
+Not in 4-8 hours, though. These have a positive outlook on the TW Tech Radar (https://www.thoughtworks.com/radar/platforms).
+
+This assignment is more suited to tech that we completely own on our machine, so
+Node.js and Swift are good options - they are both "Adopt" technologies on the 
+TW radar and have active developer communities. But...what about server side swift?
+http://perfect.org/
+It looks interesting, but the setup is a bit heavy to expect our customer to install and build just now.

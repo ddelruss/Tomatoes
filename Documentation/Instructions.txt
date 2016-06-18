@@ -1,0 +1,10 @@
+* Install Node.js:
+-> download: https://nodejs.org/en/download/
+-> verify:
+$ node --version
+v4.4.5
+$ npm install express --save
+$ npm install body-parser --save
+
+* 
+

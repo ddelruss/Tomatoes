@@ -1,0 +1,21 @@
+As stated by the client:
+
+"FreshTomatoes - Movie Reviews API" Coding Assignment 
+ 
+        - Design a REST API for Movie Reviews - you may choose a technology/framework of your choice (.NET, Java, NodeJS etc)
+        - structure can be similar to  http://private-05248-rottentomatoes.apiary-mock.com/
+       - API should have the ability to read and write movies from a database (or in memory)
+        - ** Bonus points for - security, coding best practices, unit/functional testing
+ 
+"FreshTomatoes - Movie Reviews Client" Coding Assignment 
+        - Use the REST API above to build a UI Client - you may choose a framework/platform of your choice (AngularJS, Backbone.js, iOS, Android etc)
+        - Display a list of movies with their thumbnail/images and ratings
+        - Click on movie name shall reveal/show description of the movie
+        - Include a search bar/filter to look up movies from the list that is displayed on the page 
+        - ** Bonus points for - offline capability, design, ui layouts, unit/functional testing
+ 
+What we are looking for, expectations -
+        - For your chosen framework, consider the framework author's or top thought leader’s recommendations on best practices.
+        - For your interface design (UI), we are looking to get an idea of your process and how you think about your audience
+		
+Please check the code into a github repository and provide us the link when completed. Github should include a readme with instructions to download and run the code on any machine.
