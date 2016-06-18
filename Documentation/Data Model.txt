@@ -1,0 +1,11 @@
+The data model is based on the sample provided by the customer:
+http://private-05248-rottentomatoes.apiary-mock.com/
+
+movie:
+	movie_name 	- Title of the movie (text)
+	image_url 	- Image of the movie (text url)
+	rating 		- 0-5 numeric rating (text)
+	description - Description of the movie (text)
+	
+movies: an array of movie objects
+

@@ -26,5 +26,15 @@ https://www.thepolyglotdeveloper.com/2015/10/create-a-simple-restful-api-with-no
 When I get to the routing phase I take a few minutes to design the RESTful API
 -> API Design.txt
 
-With the design sketched out I create the initial routes and get a feel for any issues.
+A key part of the API is knowing what we'll accept and return, which is our underlying data model.
+For simplicity we'll adopt the suggested JSON 4-field format:
+http://private-05248-rottentomatoes.apiary-mock.com/
+-> Data Model.txt
+
+With the design sketched out I create the initial routes and get a feel for any issues. It's best
+to play with some data, so I selected a simple local storage module:
+https://github.com/simonlast/node-persist
+
+With basic plumbing working through the browser, I selected a unit testing framework to use for
+TDD on the actual routes and behavior:
 
