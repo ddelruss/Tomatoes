@@ -16,8 +16,7 @@ an extension of the initial API.
 
 Read (GET)
 /movies 				-> Return all movies
-/movies?name={TEXT} 	-> return movies starting with TEXT. This implicitly supports search
-							(at least "starts with" style).
+/movies?name={TEXT} 	-> return movies starting with TEXT. This implicitly supports search.
 
 Create (POST)
 /movie					-> Create a movie. For now we'll assume you can't re-create an existing movie,
