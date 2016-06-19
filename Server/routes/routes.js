@@ -2,18 +2,7 @@ var appRouter = function(app) {
  
  	var storage = require('node-persist');
 	storage.initSync();
-	// storage.clear(); // use this to empty storage until we add a delete feature
-	// loadDefaultData();
-	//storage.setItem('name','Damien');
-	//console.log(storage.getItem('name'));
-	
-	// app.get("/", function(req, res) {
-	// 	console.log("Current db size %s", storage.values().length);
-	//     // res.send(storage.getItem('default').movie_name);
-	// 	var value = storage.getItem('default')
-	// 	console.log("Returning:\n%s", value)
-	//     res.send(value);
-	// });
+	storage.clearSync();  // empties database each time server is started - remove for better persistence.
 
 	app.get("/movies", function(req, res) {
 		console.log("GET. Current db size %s. Query is: %s", storage.values().length, JSON.stringify(req.query));
@@ -31,34 +20,32 @@ var appRouter = function(app) {
 	app.post("/movies", function(req, res) {
 		console.log("POST. Current db size is %s. Body is: %s", storage.values().length, JSON.stringify(req.body));
 		if (!req.body.movie_name || !req.body.image_url || !req.body.rating || !req.body.description) {
-			console.log("Returning error.");
+			console.log("Missing required data, returning error.");
 			res.statusCode = 422;
-		} else {
-			if (storage.getItemSync(req.body.movie_name)) {
-				console.log("Duplicate key error, not adding to db");
-				res.statusCode = 409;
-			} else {
-				var newMovie = {
-					movie_name: req.body.movie_name,
-					image_url: req.body.image_url,
-					rating: req.body.rating,
-					description: req.body.description
-				};
-				storage.setItemSync(req.body.movie_name, newMovie);
-			}
+			res.send();
+			return;
+		} 
+		
+		if (storage.getItemSync(req.body.movie_name)) {
+			console.log("Duplicate key error, not adding to db and returning error.");
+			res.statusCode = 409;
+			res.send();
+			return;
 		}
+		
+		var newMovie = {
+			movie_name: req.body.movie_name,
+			image_url: req.body.image_url,
+			rating: req.body.rating,
+			description: req.body.description
+		};
+		storage.setItemSync(req.body.movie_name, newMovie);
+			
 		console.log("POST updated db size is %s", storage.values().length);
 		res.send();			
 	});
 	
-	// these convenience methods allow repeated POST and GET testing prior to creating a public mechanism to delete a movie.
-	app.post("/clearAllMovies", function(req, res) {
-		console.log("Clearing database from size %s", storage.values().length);
-		storage.clearSync();
-		console.log("New db size: %s", storage.values().length);
-		res.sendStatus(200);
-	});
-	
+	// convenience method
 	app.post("/loadDefaultMovie", function(req, res) {
 		console.log("Loading default movie");
 		loadDefaultData();
@@ -78,10 +65,6 @@ var appRouter = function(app) {
 		}
 	}
 	
-	function match(movie, search) {
-		console.log("Comparing %s to %s", movie.movie_name, searc);
-		return movie.movie_name.indexOf(search) > -1;
-	}
 }
  
 module.exports = appRouter;

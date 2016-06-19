@@ -4,22 +4,11 @@ var baseUrl = "http://localhost:3000/"
 
 describe("Tomatoes Server Tests", function() {
 
-	var resetMoviesUrl = baseUrl + "clearAllMovies";
 	var loadDefaultMovieUrl = baseUrl + "loadDefaultMovie";
 	var moviesUrl = baseUrl + "movies/";
 	
   describe("GET /movies", function() {
-	  it("returns list of movies with 1 item", function(done) {
-		  request.post(resetMoviesUrl);
-		  request.post(loadDefaultMovieUrl);		  
-	  	request.get(moviesUrl, function(error, response, body) {
-            expect(response.statusCode).toBe(200);
-	    	expect(JSON.parse(body).length).toBe(1);
-			expect(JSON.parse(body)[0].rating).toBe("2.5"); // the default movie
-	    	done();
-	   	});
-	  });
-	 
+	 request.post(loadDefaultMovieUrl);
 	 var unmatchingUrl = moviesUrl + "?movie_name=UNKNOWN";
 	 it("Unmatching query parameter finds nothing", function(done) {
 		 request.get(unmatchingUrl, function(error, response, body) {
@@ -97,33 +86,33 @@ describe("Tomatoes Server Tests", function() {
 	 			done();
 	 		});
 	 });
-	 
-	 // it("posted succeeds for valid movie", function(done) {
-	 // 		 // request.post(resetMoviesUrl);  // causes race condition error
-	 //     	var exactMatchingUrl = moviesUrl + "?movie_name=Valid Movie";
-	 //
-	 // 		formData = {
-	 // 			 "movie_name": "Valid Movie",
-	 // 		 	"image_url": "Valid URL",
-	 // 			 "rating": "Valid rating",
-	 // 			 "description": "Valid description"
-	 // 		 }
-	 //  		request.post(moviesUrl).form(formData);
-	 // 		request.get(exactMatchingUrl, function(error, response, body) {
-	 // 		 	expect(JSON.parse(body).length).toBe(1);
-	 // 			if (JSON.parse(body).length > 0) {
-	 // 				var body = JSON.parse(body)[0];
-	 // 				expect(body.movie_name).toBe("Valid Movie");
-	 // 				expect(body.rating).toBe("Valid rating");
-	 // 				expect(body.image_url).toBe("Valid URL");
-	 // 				expect(body.description).toBe("Valid description");
-	 // 			}
-	 // 			done();
-	 // 		});
-	 // });
+
+	 it("posted succeeds for valid movie", function(done) {
+	 		 // request.post(resetMoviesUrl);  // causes race condition error
+	     	var exactMatchingUrl = moviesUrl + "?movie_name=Valid Movie";
+
+	 		formData = {
+	 			 "movie_name": "Valid Movie",
+	 		 	"image_url": "Valid URL",
+	 			 "rating": "Valid rating",
+	 			 "description": "Valid description"
+	 		 }
+	  		request.post(moviesUrl).form(formData);
+	 		request.get(exactMatchingUrl, function(error, response, body) {
+	 		 	expect(JSON.parse(body).length).toBe(1);
+	 			if (JSON.parse(body).length > 0) {
+	 				var body = JSON.parse(body)[0];
+	 				expect(body.movie_name).toBe("Valid Movie");
+	 				expect(body.rating).toBe("Valid rating");
+	 				expect(body.image_url).toBe("Valid URL");
+	 				expect(body.description).toBe("Valid description");
+	 			}
+	 			done();
+	 		});
+	 });
 	 
 	 it("posted fails for an existing movie", function(done) {
-	  	  	// request.post(resetMoviesUrl);
+		 // request.post(resetMoviesUrl);  // exacerbates race condition errors
 	 		formData = {
 	 			 "movie_name": "Repeat Movie",
 	 		 	"image_url": "any URL",
@@ -144,37 +133,6 @@ describe("Tomatoes Server Tests", function() {
 
 	 });
 	 
-
- 	// it("posted movie is available", function(done) {
- 	// 	request.post(resetMoviesUrl);
- 	// 		request.post(moviesUrl, function(error, response, body) {
- 	//             expect(response.statusCode).toBe(200);
- 	// 			done();
- 	// 		});
- 	// 	// request.get(moviesUrl, function(error, response, body) {
- 	// 	// 	expect(JSON.parse(body).length).toBe(1);
- 	// 	// 		console.log(JSON.parse(body))
- 	// 	// 	done();
- 	// 	// });
- 	// });
- //
- // 	it("posts new movie", function(done) {
- // 	 	request.post(moviesUrl, function(error, response, body) {
- // 	 		expect(response.statusCode).toBe(200);
- // 			done();
- // 		});
- // 	 });
- // 	//
- // 	// it("posted movie is in available", function(done) {
- // 	//  			request.get(moviesUrl, function(error, response, body) {
- // 	//  			    expect(JSON.parse(body).length).toBe(1);
- // 	//  	  		  	expect(JSON.parse(body)[0].movie_name).toBe("Test Movie");
- // 	//  	  		  	expect(JSON.parse(body)[0].image_url).toBe(aMovie.image_url);
- // 	//  	  		  	expect(JSON.parse(body)[0].rating).toBe("4.0");
- // 	//  	  		  	expect(JSON.parse(body)[0].description).toBe(aMovie.description);
- // 	//  			    done();
- // 	//  			});
- // 	//  	});
  });
   
 });
