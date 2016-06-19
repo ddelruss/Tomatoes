@@ -39,3 +39,9 @@ With basic plumbing working through the browser, I selected a unit testing frame
 TDD on the actual routes and behavior:
 https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-jasmine
 
+In the course of creating the app via TDD I encountered several issues:
+* Storage library does not "valuesWithKeyMatch" as avertised, so I wrote my own filter
+* Jasmine-node tests + storage library can be flaky and encounter race conditions even on sync calls
+The issues seem to be related to the speed with which Jasmine executes HTTP requests against the 
+Express server, which can cause setup tasks (like emptying the database) to interleave with subsequent
+tasks. Too much to debug on my timeframe.

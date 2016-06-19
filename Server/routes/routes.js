@@ -1,9 +1,9 @@
 var appRouter = function(app) {
  
- 	var storage = require('node-persist')
+ 	var storage = require('node-persist');
 	storage.initSync();
 	// storage.clear(); // use this to empty storage until we add a delete feature
-	loadDefaultData();
+	// loadDefaultData();
 	//storage.setItem('name','Damien');
 	//console.log(storage.getItem('name'));
 	
@@ -16,16 +16,54 @@ var appRouter = function(app) {
 	// });
 
 	app.get("/movies", function(req, res) {
-		// console.log("Current db size %s", storage.values().length);
-		console.log(req.query)
-		// var	values = req.query.movie_name ? storage.valuesWithKeyMatch(req.query.movie_name) : storage.values()
-		var values = storage.values()
-		var searchTerm = req.query.movie_name
+		console.log("GET. Current db size %s. Query is: %s", storage.values().length, JSON.stringify(req.query));
+		var values = storage.values();
+		var searchTerm = req.query.movie_name;
+		console.log("Result for %s as search term versus %s is", searchTerm, values[0].movie_name)
 		function match(movie) {
-			return movie.movie_name.indexOf(searchTerm) > -1
+			return movie.movie_name.indexOf(searchTerm) > -1;
 		}
-		var filterValues = searchTerm ? values.filter(match) : values
-		res.send(filterValues)
+		var filterValues = searchTerm ? values.filter(match) : values;
+		console.log("Returning filtered values: %s", JSON.stringify(filterValues));
+		res.send(filterValues);
+	});
+
+	app.post("/movies", function(req, res) {
+		console.log("POST. Current db size is %s. Body is: %s", storage.values().length, JSON.stringify(req.body));
+		if (!req.body.movie_name || !req.body.image_url || !req.body.rating || !req.body.description) {
+			console.log("Returning error.");
+			res.statusCode = 422;
+		} else {
+			if (storage.getItemSync(req.body.movie_name)) {
+				console.log("Duplicate key error, not adding to db");
+				res.statusCode = 409;
+			} else {
+				var newMovie = {
+					movie_name: req.body.movie_name,
+					image_url: req.body.image_url,
+					rating: req.body.rating,
+					description: req.body.description
+				};
+				storage.setItemSync(req.body.movie_name, newMovie);
+			}
+		}
+		console.log("POST updated db size is %s", storage.values().length);
+		res.send();			
+	});
+	
+	// these convenience methods allow repeated POST and GET testing prior to creating a public mechanism to delete a movie.
+	app.post("/clearAllMovies", function(req, res) {
+		console.log("Clearing database from size %s", storage.values().length);
+		storage.clearSync();
+		console.log("New db size: %s", storage.values().length);
+		res.sendStatus(200);
+	});
+	
+	app.post("/loadDefaultMovie", function(req, res) {
+		console.log("Loading default movie");
+		loadDefaultData();
+		console.log("New db size: %s", storage.values().length);
+		res.sendStatus(200);
 	});
 	
 	function loadDefaultData() {
@@ -35,14 +73,14 @@ var appRouter = function(app) {
 				image_url: "http://ielts-results.weebly.com/uploads/4/0/6/6/40661105/1113084_orig.jpg",
 				rating: "2.5",
 				description: "A compelling movie description"
-			}
-			storage.setItem(aMovie.movie_name, aMovie)
+			};
+			storage.setItemSync(aMovie.movie_name, aMovie);
 		}
 	}
 	
 	function match(movie, search) {
-		console.log("Comparing %s to %s", movie.movie_name, searc)
-		return movie.movie_name.indexOf(search) > -1
+		console.log("Comparing %s to %s", movie.movie_name, searc);
+		return movie.movie_name.indexOf(search) > -1;
 	}
 }
  

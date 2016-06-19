@@ -20,7 +20,7 @@ Read (GET)
 
 Create (POST)
 /movie					-> Create a movie. For now we'll assume you can't re-create an existing movie,
-							triggering an error.
+							giving opportunity for some defensive coding with unit tests
 
 Update (POST) [OUT OF SCOPE]
 /movie?update=YES		-> Parameter allows override of protections and supports "UPSERT" style create/update.
