@@ -5,7 +5,9 @@ $ node --version
 v4.4.5
 $ npm install express --save
 $ npm install body-parser --save
-$ npm install node-persist
+$ npm install node-persist --save
+$ npm install jasmine-node --save
+$ npm install request --save
 
 * 
 

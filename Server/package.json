@@ -4,13 +4,16 @@
   "description": "A basic Node.js API for the Fresh Tomatoes coding example.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "./node_modules/.bin/jasmine-node spec"
   },
   "author": "Damien Del Russo",
   "private": true,
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.1",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "jasmine-node": "^1.14.5",
+    "node-persist": "0.0.11",
+    "request": "^2.72.0"
   }
 }
