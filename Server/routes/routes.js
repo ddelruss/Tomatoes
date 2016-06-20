@@ -3,12 +3,11 @@ var appRouter = function(app) {
  	var storage = require('node-persist');
 	storage.initSync();
 	storage.clearSync();  // empties database each time server is started - remove for better persistence.
-
+	loadDefaultData();
 	app.get("/movies", function(req, res) {
 		console.log("GET. Current db size %s. Query is: %s", storage.values().length, JSON.stringify(req.query));
 		var values = storage.values();
 		var searchTerm = req.query.movie_name;
-		console.log("Result for %s as search term versus %s is", searchTerm, values[0].movie_name)
 		function match(movie) {
 			return movie.movie_name.indexOf(searchTerm) > -1;
 		}
@@ -62,6 +61,12 @@ var appRouter = function(app) {
 				description: "A compelling movie description"
 			};
 			storage.setItemSync(aMovie.movie_name, aMovie);
+			var secondMovie = {
+				movie_name: "Another Movie",
+				image_url: "http://ielts-results.weebly.com/uploads/4/0/6/6/40661105/1113084_orig.jpg",
+				rating: "5.0",
+				description: "Another movie description"				
+			}
 		}
 	}
 	

@@ -88,7 +88,6 @@ describe("Tomatoes Server Tests", function() {
 	 });
 
 	 it("posted succeeds for valid movie", function(done) {
-	 		 // request.post(resetMoviesUrl);  // causes race condition error
 	     	var exactMatchingUrl = moviesUrl + "?movie_name=Valid Movie";
 
 	 		formData = {
@@ -112,7 +111,6 @@ describe("Tomatoes Server Tests", function() {
 	 });
 	 
 	 it("posted fails for an existing movie", function(done) {
-		 // request.post(resetMoviesUrl);  // exacerbates race condition errors
 	 		formData = {
 	 			 "movie_name": "Repeat Movie",
 	 		 	"image_url": "any URL",

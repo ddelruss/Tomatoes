@@ -3,6 +3,7 @@
 -> verify:
 $ node --version
 v4.4.5
+('npm install' may be sufficient since these are in package.json)
 $ npm install express --save
 $ npm install body-parser --save
 $ npm install node-persist --save
