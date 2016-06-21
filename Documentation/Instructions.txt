@@ -12,5 +12,12 @@ $ npm install request --save
 
 * To run Server tests:
 $ cd Server
-$ npm test
+$ node app.js    (runs the server locally)
+$ npm test       (these can be flaky, but they pass for me - run multiple times for a feel)
 
+Run iOS Tests:
+-> Command-U
+
+Run iOS App:
+-> Command-R
+(launch in simulator) 

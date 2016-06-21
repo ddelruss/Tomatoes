@@ -45,3 +45,29 @@ In the course of creating the app via TDD I encountered several issues:
 The issues seem to be related to the speed with which Jasmine executes HTTP requests against the 
 Express server, which can cause setup tasks (like emptying the database) to interleave with subsequent
 tasks. Too much to debug on my timeframe.
+
+Working on the client, I started with an existing iOS project called Stockholm - please excuse any remnants such as
+build artifacts and targets that retain the name. I created unit tests for the model and a functional
+UI. 
+
+Unfortunately I was unable to get the simulator to communicate with my localhost Node server, and 
+exceeded my allotted time to resolve the issue. Instead I had my iOS app load from the apiary-mock
+data upon refresh - drag the interface in order to initiate a refresh.
+
+There are many small Client defects such as:
+* Images do not update on device until the user clicks - proper image loading would update the UI without user action
+* Deletions are only on the local device, not communicated to server
+* Images are not forced to the same width on the main page
+* On refresh images load multiple times (this would not happen if server could be treated as master)
+
+On the bright side:
+* Movies filter "live" based on "search" text - very responsive
+* Deletions can be made within filtered results
+* Filter persists through detail view
+* Refresh loads from "server" (not mine)
+* Detail view shows larger image
+* ColorStruct shows how app colors can be controlled from centralized source (similar to CSS)
+
+Overall this is a good *start* on an app, with many obvious areas for improvement both on client and server.
+Apologies for the iOS app not directly communicating with the localhost Node app - these errors can take
+a long time to resolve - hopefully it isn't material to our conversation.

@@ -18,7 +18,7 @@ Persistance
 -> https://github.com/simonlast/node-persist
 
 Testing Framework(s)
--> 
+-> Jasmine
 
 Deployment:
 -> Local (given scope of project assignment)
@@ -31,11 +31,10 @@ Technology
 -> iOS (Swift)
 
 Testing Framework(s)
--> xUnit
+-> XCTest (model only)
 
 Deployment:
--> Simulator (using localhost)
--> Personal device to show offline behavior (optional)
+-> Simulator (using localhost - note this part didn't work; apiary worked though)
 
 _________
 
