@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB02EC3D1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02EC3C1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift */; };
+		DB02EC3E1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02EC3C1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift */; };
+		DB02EC3F1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02EC3C1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift */; };
+		DB03036B1C2C868C006179F2 /* ColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB03036A1C2C868C006179F2 /* ColorStruct.swift */; };
+		DB03036C1C2C868C006179F2 /* ColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB03036A1C2C868C006179F2 /* ColorStruct.swift */; };
+		DB03036D1C2C868C006179F2 /* ColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB03036A1C2C868C006179F2 /* ColorStruct.swift */; };
+		DB0643841C190CF600C17B5A /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0643831C190CF600C17B5A /* MovieTableViewController.swift */; };
+		DB0643851C190CF600C17B5A /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0643831C190CF600C17B5A /* MovieTableViewController.swift */; };
+		DB0643861C190CF600C17B5A /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0643831C190CF600C17B5A /* MovieTableViewController.swift */; };
+		DB06438C1C192EBE00C17B5A /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06438B1C192EBE00C17B5A /* MovieTableViewCell.swift */; };
+		DB06438D1C192EBE00C17B5A /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06438B1C192EBE00C17B5A /* MovieTableViewCell.swift */; };
+		DB06438E1C192EBE00C17B5A /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06438B1C192EBE00C17B5A /* MovieTableViewCell.swift */; };
+		DB0643981C1A47B700C17B5A /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0643971C1A47B700C17B5A /* Portfolio.swift */; };
+		DB0643991C1A47B700C17B5A /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0643971C1A47B700C17B5A /* Portfolio.swift */; };
+		DB06439A1C1A47B700C17B5A /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0643971C1A47B700C17B5A /* Portfolio.swift */; };
+		DB3DD2171BC9BC130061F6BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DD2161BC9BC130061F6BE /* AppDelegate.swift */; };
+		DB3DD21C1BC9BC130061F6BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3DD21A1BC9BC130061F6BE /* Main.storyboard */; };
+		DB3DD21E1BC9BC130061F6BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3DD21D1BC9BC130061F6BE /* Assets.xcassets */; };
+		DB3DD22C1BC9BC130061F6BE /* TomatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DD22B1BC9BC130061F6BE /* TomatoTests.swift */; };
+		DB9136711D174180004C7C06 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9136701D174180004C7C06 /* Movie.swift */; };
+		DB9136721D174180004C7C06 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9136701D174180004C7C06 /* Movie.swift */; };
+		DB9136731D174180004C7C06 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9136701D174180004C7C06 /* Movie.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB3DD2281BC9BC130061F6BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB3DD20B1BC9BC130061F6BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB3DD2121BC9BC130061F6BE;
+			remoteInfo = Stockholm;
+		};
+		DB3DD2331BC9BC130061F6BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB3DD20B1BC9BC130061F6BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB3DD2121BC9BC130061F6BE;
+			remoteInfo = Stockholm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB02EC3C1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailTableViewController.swift; sourceTree = "<group>"; };
+		DB03036A1C2C868C006179F2 /* ColorStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorStruct.swift; sourceTree = "<group>"; };
+		DB0643831C190CF600C17B5A /* MovieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		DB06438B1C192EBE00C17B5A /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		DB0643971C1A47B700C17B5A /* Portfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		DB3DD2131BC9BC130061F6BE /* Stockholm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stockholm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3DD2161BC9BC130061F6BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB3DD21B1BC9BC130061F6BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB3DD21D1BC9BC130061F6BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB3DD2221BC9BC130061F6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB3DD2271BC9BC130061F6BE /* StockholmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockholmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3DD22B1BC9BC130061F6BE /* TomatoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoTests.swift; sourceTree = "<group>"; };
+		DB3DD22D1BC9BC130061F6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB3DD2321BC9BC130061F6BE /* StockholmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockholmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9136701D174180004C7C06 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB3DD2101BC9BC130061F6BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3DD2241BC9BC130061F6BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3DD22F1BC9BC130061F6BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB0643821C174B9D00C17B5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DD21D1BC9BC130061F6BE /* Assets.xcassets */,
+				DB3DD2221BC9BC130061F6BE /* Info.plist */,
+				DB3DD2161BC9BC130061F6BE /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB3DD20A1BC9BC130061F6BE = {
+			isa = PBXGroup;
+			children = (
+				DB3DD2151BC9BC130061F6BE /* Tomato */,
+				DB3DD22A1BC9BC130061F6BE /* TomatoTests */,
+				DB3DD2141BC9BC130061F6BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB3DD2141BC9BC130061F6BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DD2131BC9BC130061F6BE /* Stockholm.app */,
+				DB3DD2271BC9BC130061F6BE /* StockholmTests.xctest */,
+				DB3DD2321BC9BC130061F6BE /* StockholmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB3DD2151BC9BC130061F6BE /* Tomato */ = {
+			isa = PBXGroup;
+			children = (
+				DB0643821C174B9D00C17B5A /* Supporting Files */,
+				DB3DD21A1BC9BC130061F6BE /* Main.storyboard */,
+				DB0643831C190CF600C17B5A /* MovieTableViewController.swift */,
+				DB02EC3C1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift */,
+				DB06438B1C192EBE00C17B5A /* MovieTableViewCell.swift */,
+				DB0643971C1A47B700C17B5A /* Portfolio.swift */,
+				DB03036A1C2C868C006179F2 /* ColorStruct.swift */,
+				DB9136701D174180004C7C06 /* Movie.swift */,
+			);
+			name = Tomato;
+			path = Stockholm;
+			sourceTree = "<group>";
+		};
+		DB3DD22A1BC9BC130061F6BE /* TomatoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB3DD22B1BC9BC130061F6BE /* TomatoTests.swift */,
+				DB3DD22D1BC9BC130061F6BE /* Info.plist */,
+			);
+			name = TomatoTests;
+			path = StockholmTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB3DD2121BC9BC130061F6BE /* Stockholm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB3DD23B1BC9BC130061F6BE /* Build configuration list for PBXNativeTarget "Stockholm" */;
+			buildPhases = (
+				DB3DD20F1BC9BC130061F6BE /* Sources */,
+				DB3DD2101BC9BC130061F6BE /* Frameworks */,
+				DB3DD2111BC9BC130061F6BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stockholm;
+			productName = Stockholm;
+			productReference = DB3DD2131BC9BC130061F6BE /* Stockholm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB3DD2261BC9BC130061F6BE /* StockholmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB3DD23E1BC9BC130061F6BE /* Build configuration list for PBXNativeTarget "StockholmTests" */;
+			buildPhases = (
+				DB3DD2231BC9BC130061F6BE /* Sources */,
+				DB3DD2241BC9BC130061F6BE /* Frameworks */,
+				DB3DD2251BC9BC130061F6BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB3DD2291BC9BC130061F6BE /* PBXTargetDependency */,
+			);
+			name = StockholmTests;
+			productName = StockholmTests;
+			productReference = DB3DD2271BC9BC130061F6BE /* StockholmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB3DD2311BC9BC130061F6BE /* StockholmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB3DD2411BC9BC130061F6BE /* Build configuration list for PBXNativeTarget "StockholmUITests" */;
+			buildPhases = (
+				DB3DD22E1BC9BC130061F6BE /* Sources */,
+				DB3DD22F1BC9BC130061F6BE /* Frameworks */,
+				DB3DD2301BC9BC130061F6BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB3DD2341BC9BC130061F6BE /* PBXTargetDependency */,
+			);
+			name = StockholmUITests;
+			productName = StockholmUITests;
+			productReference = DB3DD2321BC9BC130061F6BE /* StockholmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB3DD20B1BC9BC130061F6BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Stockholm;
+				TargetAttributes = {
+					DB3DD2121BC9BC130061F6BE = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 6VNAAAYT4C;
+					};
+					DB3DD2261BC9BC130061F6BE = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = DB3DD2121BC9BC130061F6BE;
+					};
+					DB3DD2311BC9BC130061F6BE = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = DB3DD20E1BC9BC130061F6BE /* Build configuration list for PBXProject "Tomato" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB3DD20A1BC9BC130061F6BE;
+			productRefGroup = DB3DD2141BC9BC130061F6BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB3DD2121BC9BC130061F6BE /* Stockholm */,
+				DB3DD2261BC9BC130061F6BE /* StockholmTests */,
+				DB3DD2311BC9BC130061F6BE /* StockholmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB3DD2111BC9BC130061F6BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3DD21E1BC9BC130061F6BE /* Assets.xcassets in Resources */,
+				DB3DD21C1BC9BC130061F6BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3DD2251BC9BC130061F6BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3DD2301BC9BC130061F6BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB3DD20F1BC9BC130061F6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9136711D174180004C7C06 /* Movie.swift in Sources */,
+				DB03036B1C2C868C006179F2 /* ColorStruct.swift in Sources */,
+				DB02EC3D1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift in Sources */,
+				DB0643841C190CF600C17B5A /* MovieTableViewController.swift in Sources */,
+				DB3DD2171BC9BC130061F6BE /* AppDelegate.swift in Sources */,
+				DB0643981C1A47B700C17B5A /* Portfolio.swift in Sources */,
+				DB06438C1C192EBE00C17B5A /* MovieTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3DD2231BC9BC130061F6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9136721D174180004C7C06 /* Movie.swift in Sources */,
+				DB03036C1C2C868C006179F2 /* ColorStruct.swift in Sources */,
+				DB02EC3E1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift in Sources */,
+				DB0643851C190CF600C17B5A /* MovieTableViewController.swift in Sources */,
+				DB3DD22C1BC9BC130061F6BE /* TomatoTests.swift in Sources */,
+				DB0643991C1A47B700C17B5A /* Portfolio.swift in Sources */,
+				DB06438D1C192EBE00C17B5A /* MovieTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3DD22E1BC9BC130061F6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9136731D174180004C7C06 /* Movie.swift in Sources */,
+				DB03036D1C2C868C006179F2 /* ColorStruct.swift in Sources */,
+				DB02EC3F1C1CC35D00E9BAF9 /* MovieDetailTableViewController.swift in Sources */,
+				DB0643861C190CF600C17B5A /* MovieTableViewController.swift in Sources */,
+				DB06439A1C1A47B700C17B5A /* Portfolio.swift in Sources */,
+				DB06438E1C192EBE00C17B5A /* MovieTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB3DD2291BC9BC130061F6BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB3DD2121BC9BC130061F6BE /* Stockholm */;
+			targetProxy = DB3DD2281BC9BC130061F6BE /* PBXContainerItemProxy */;
+		};
+		DB3DD2341BC9BC130061F6BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB3DD2121BC9BC130061F6BE /* Stockholm */;
+			targetProxy = DB3DD2331BC9BC130061F6BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB3DD21A1BC9BC130061F6BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB3DD21B1BC9BC130061F6BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB3DD2391BC9BC130061F6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB3DD23A1BC9BC130061F6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB3DD23C1BC9BC130061F6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Stockholm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tomato.Tomato;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		DB3DD23D1BC9BC130061F6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Stockholm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tomato.Tomato;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		DB3DD23F1BC9BC130061F6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StockholmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stockholm.StockholmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stockholm.app/Stockholm";
+			};
+			name = Debug;
+		};
+		DB3DD2401BC9BC130061F6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StockholmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stockholm.StockholmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stockholm.app/Stockholm";
+			};
+			name = Release;
+		};
+		DB3DD2421BC9BC130061F6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
+				INFOPLIST_FILE = StockholmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stockholm.StockholmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DB3DD2431BC9BC130061F6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
+				INFOPLIST_FILE = StockholmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stockholm.StockholmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB3DD20E1BC9BC130061F6BE /* Build configuration list for PBXProject "Tomato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB3DD2391BC9BC130061F6BE /* Debug */,
+				DB3DD23A1BC9BC130061F6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB3DD23B1BC9BC130061F6BE /* Build configuration list for PBXNativeTarget "Stockholm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB3DD23C1BC9BC130061F6BE /* Debug */,
+				DB3DD23D1BC9BC130061F6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB3DD23E1BC9BC130061F6BE /* Build configuration list for PBXNativeTarget "StockholmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB3DD23F1BC9BC130061F6BE /* Debug */,
+				DB3DD2401BC9BC130061F6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB3DD2411BC9BC130061F6BE /* Build configuration list for PBXNativeTarget "StockholmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB3DD2421BC9BC130061F6BE /* Debug */,
+				DB3DD2431BC9BC130061F6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB3DD20B1BC9BC130061F6BE /* Project object */;
+}
